@@ -1,0 +1,156 @@
+.homeTestimonial {
+  @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+  font-family: "Montserrat", sans-serif;
+}
+.homeTestimonial .testimonial {
+  padding: 100px 0;
+}
+.homeTestimonial .testimonial .row .tabs {
+  all: unset;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.homeTestimonial .testimonial .row .tabs li {
+  all: unset;
+  display: block;
+  position: relative;
+}
+.homeTestimonial .testimonial .row .tabs li.active::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #71b85f;
+  border-radius: 50%;
+}
+.homeTestimonial .testimonial .row .tabs li.active::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: #71b85f;
+  border-radius: 50%;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(1) {
+  align-self: flex-end;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(1)::before {
+  left: 64%;
+  bottom: -50px;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(1)::after {
+  left: 97%;
+  bottom: -81px;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(1) figure img {
+  margin-left: auto;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(2) {
+  align-self: flex-start;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(2)::before {
+  right: -65px;
+  top: 50%;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(2)::after {
+  bottom: 101px;
+  border-radius: 50%;
+  right: -120px;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(2) figure img {
+  margin-right: auto;
+  max-width: 300px;
+  width: 100%;
+  margin-top: -50px;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(3) {
+  align-self: flex-end;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(3)::before {
+  right: -10px;
+  top: -66%;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(3)::after {
+  top: -130px;
+  border-radius: 50%;
+  right: -46px;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(3) figure img {
+  margin-left: auto;
+  margin-top: -50px;
+}
+.homeTestimonial .testimonial .row .tabs li:nth-child(3):focus {
+  border: 10px solid red;
+}
+.homeTestimonial .testimonial .row .tabs li figure {
+  position: relative;
+}
+.homeTestimonial .testimonial .row .tabs li figure img {
+  display: block;
+}
+.homeTestimonial .testimonial .row .tabs li figure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #dff9d9;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: 0.3s;
+}
+.homeTestimonial .testimonial .row .tabs li figure:hover::after {
+  transform: scale(1.1);
+}
+.homeTestimonial .testimonial .row .tabs.carousel-indicators li.active figure::after {
+  transform: scale(1.1);
+}
+.homeTestimonial .testimonial .row .carousel > h3 {
+  font-size: 20px;
+  line-height: 1.45;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.homeTestimonial .testimonial .row .carousel h1 {
+  font-size: 40px;
+  line-height: 1.225;
+  margin-top: 23px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.homeTestimonial .testimonial .row .carousel .carousel-indicators {
+  all: unset;
+  padding-top: 43px;
+  display: flex;
+  list-style: none;
+}
+.homeTestimonial .testimonial .row .carousel .carousel-indicators li {
+  background: white;
+  background-clip: padding-box;
+  height: 2px;
+}
+.homeTestimonial .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper {
+  margin-top: 42px;
+}
+.homeTestimonial .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper p {
+  font-size: 18px;
+  line-height: 1.72222;
+  font-weight: 500;
+  color: white;
+}
+.homeTestimonial .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h3 {
+  color: white;
+  font-weight: 700;
+  margin-top: 37px;
+  font-size: 20px;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1200px) {
+  .homeTestimonial body .testimonial .row .tabs {
+    margin-right: 25px;
+  }
+}/*# sourceMappingURL=testimonial.css.map */
